@@ -7,9 +7,9 @@ html{
 }
 
 .lateral{
-	background-color:#56B3AB;
+	background-color:#3385AD;
 	bottom: 0;
-	left: 0px;
+	right: 0px;
 	padding: 1em;
 	position:fixed;
 	top: 0;
@@ -45,7 +45,7 @@ html{
 /*Informacion*/
 
 .informacion{
-	color: #0F6A62;
+	color: #003366;
 	position:absolute;
 	bottom: 1em;	
 }
@@ -80,7 +80,7 @@ html{
 /*Proyectos*/
 
 .proyectos{
-	margin-left:350px;
+	margin-right:350px;
 	padding: 1em;
 	display: table;
 }
@@ -101,4 +101,12 @@ html{
 
 .proyecto__descripcion{
 	color:#797D7F;	
+}
+
+
+.version
+{
+	background-color: #3385AD;
+	color: #003366;
+	padding:8px;
 }
