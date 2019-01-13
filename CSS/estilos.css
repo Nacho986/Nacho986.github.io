@@ -21,6 +21,7 @@ html{
 
 .perfil__circulo{
 	border-radius: 50%;
+	border: 3px solid black;
 	height: 50px;
 	overflow: hidden; /*Todo lo que queda afuera de la caja de 50x50 se queda escondido*/
 	margin: 0;
