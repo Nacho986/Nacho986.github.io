@@ -10,7 +10,9 @@ html{
 	background-color:#3385AD;
 	bottom: 0;
 	right: 0px;
-	padding: 1em;
+	padding-top: 2em;
+	padding-left: 1em;
+	padding-right: 1em;
 	position:fixed;
 	top: 0;
 	width: 350px;
@@ -46,29 +48,39 @@ html{
 
 .informacion{
 	color: #003366;
-	position:absolute;
-	bottom: 1em;	
+/*	position:absolute;
+*/	bottom: 1em;	
 }
 
 .informacion__titulo{
 	font-size: 18px;
 }
+.informacion__habilidades{
+	padding:0px 25px 0px 25px;
+}
+
+.listado__lenguajes{
+	padding:0px 0px 0px 25px;
+}
+
+
+
 
 /*Habilidades*/
 .habilidades {
 	padding: 0;
 }
 
-.habilidad{
+/*.habilidad{
 	background-color: #0F6A62;
 	color: #fff;
 	display: inline-block;
 	text-transform: uppercase;
 	padding: .5em;
 	font-size: 12px;
-}
+} */ /*Lo saque de uso para que todas las habilidades queden iguales*/ 
 
-.habilidad--proyecto{
+.habilidad{
 	background-color: #29597C;
 	color: #fff;
 	display: inline-block;
@@ -92,15 +104,22 @@ html{
 
 .proyecto__imagen{
 	width:100%;
+	border:5px solid black;
 }
 
 .proyecto__titulo{
 	color: #29597C;
-	font-size:18px;
+	font-size:20px;
 }
 
 .proyecto__descripcion{
 	color:#797D7F;	
+}
+
+.proyecto__subtitulo{
+	color: #29597C;
+	font-style: italic;
+	font-size:16px;
 }
 
 
@@ -110,3 +129,57 @@ html{
 	color: #003366;
 	padding:8px;
 }
+
+caption{
+	border: 3px solid black;
+	padding: 3px 14px 3px 14px;
+	background-color: #99ccff;
+	border-collapse: collapse;
+
+}
+
+table{
+	border: 3px solid black;
+	border-top-color: unset;
+	width: 95%;
+	font-size: 20px;
+	background-color: #99ccff;
+	border-collapse: collapse;
+	position:absolute;
+	bottom: 10px;
+	left: 10px;
+	right: 10px;
+}
+
+thead{
+	border-bottom: 3px solid black;
+}
+
+tr{
+	border: 1px solid black;	
+}
+
+td {
+	padding: 3px 14px 3px 14px;
+}
+
+.lenguaje{
+	font-size: 80%;
+	padding: 10px;
+}
+
+.encabezado{
+	background-color: #9Fccff;
+	font-size: 90%
+
+}
+
+.caja__llena{
+	background-color: #0F3366;
+	color: #99ccff;
+}
+
+.caja__vacia{
+	background-color: unset;
+}
+
