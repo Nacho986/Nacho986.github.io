@@ -17,6 +17,9 @@ html{
 	top: 0;
 	width: 350px;
 }
+
+
+
 /* Perfil */
 
 .perfil__circulo{
@@ -134,7 +137,7 @@ html{
 caption{
 	border: 3px solid black;
 	padding: 3px 14px 3px 14px;
-	background-color: #99ccff;
+	background-color: #76b6d6;
 	border-collapse: collapse;
 
 }
@@ -144,7 +147,7 @@ table{
 	border-top-color: unset;
 	width: 95%;
 	font-size: 20px;
-	background-color: #99ccff;
+	background-color: #76b6d6;
 	border-collapse: collapse;
 	position:absolute;
 	bottom: 10px;
@@ -170,7 +173,7 @@ td {
 }
 
 .encabezado{
-	background-color: #9Fccff;
+	background-color: #76b6d6;
 	font-size: 90%
 
 }
@@ -184,3 +187,30 @@ td {
 	background-color: unset;
 }
 
+
+/*Para Celulares Jajaja que macana!*/
+
+@media (max-width: 600px){
+.lateral{
+	
+	margin-right: initial;
+	position: relative;
+	width: initial;
+
+
+}
+
+@media (max-width: 600px) {
+
+.proyectos{
+
+	margin-right: initial;
+
+}
+}
+
+@media {
+	table{
+		position:relative;
+	}
+}
