@@ -209,8 +209,31 @@ td {
 }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1000px){
 	table{
+		
 		position:relative;
+		left: 25%;
+		font-size:85%;
+		border: 1px solid black;
+		margin-left: 30px;
 	}
+}
+
+@media (max-width: 1000px){
+
+thead{
+	border-bottom: 1px solid black;
+}
+
+}
+
+@media (max-width: 1000px){
+	caption{
+	border: 1px solid black;
+	padding: 3px 14px 3px 14px;
+	background-color: #76b6d6;
+	border-collapse: collapse;
+
+}
 }
