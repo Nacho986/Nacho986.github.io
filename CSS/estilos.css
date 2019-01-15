@@ -190,7 +190,7 @@ td {
 
 /*Para Celulares Jajaja que macana!*/
 
-@media (max-width: 800px){
+@media (max-width: 1000px){
 .lateral{
 	
 	margin-right: initial;
@@ -200,7 +200,7 @@ td {
 
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
 
 .proyectos{
 
@@ -209,7 +209,7 @@ td {
 }
 }
 
-@media {
+@media (max-width: 1000px) {
 	table{
 		position:relative;
 	}
