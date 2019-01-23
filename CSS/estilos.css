@@ -13,6 +13,7 @@ html{
 	padding-top: 2em;
 	padding-left: 1em;
 	padding-right: 1em;
+	padding-bottom: 1em;
 	position:fixed;
 	top: 0;
 	width: 350px;
@@ -188,6 +189,40 @@ td {
 }
 
 
+.barra {
+	float: right;
+	width: 60%; /*Ajustar segun el valor*/
+	/*display: inline-block;*/
+	height: auto;
+	margin: 5px 0px 5px 0px;
+	border-radius: 10px;
+	background: #0F3366;
+	overflow: auto;
+	border: 1px solid white;
+}
+.div__lv {
+	background: #76b6d6;
+	height: auto;
+	/*padding: 15px;*/
+	width: auto;
+	margin: 10px 0px 10px;
+	border-radius: 10px;
+	border: 2px solid black;
+	box-shadow: 0 5px 8px rgba(0,0,0,.3);
+	display: flex;
+}
+.div__lv p {
+	color: white;
+	margin: 1px;
+	padding: 5px 10px;
+	font-weight: 15px;
+}
+
+
+
+
+
+
 /*Para Celulares Jajaja que macana!*/
 
 @media (max-width: 1000px){
@@ -196,7 +231,6 @@ td {
 	margin-right: initial;
 	position: relative;
 	width: initial;
-
 
 }
 
@@ -237,3 +271,9 @@ thead{
 
 }
 }
+
+
+/*  ESTILO DE LA BARRA DE PROGRESO*/
+
+
+
