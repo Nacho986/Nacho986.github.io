@@ -99,12 +99,12 @@ html{
 .proyectos{
 	margin-right:350px;
 	padding: 1em;
-	display: table;
+	display: table;	
 }
 .proyecto{
 	display: table-cell;
 	padding: 1em;
-	width:50%;
+	width: all;
 }
 
 .proyecto__imagen{
@@ -219,6 +219,13 @@ td {
 }
 
 
+#CSS {
+
+width: 40%;
+
+}
+
+
 
 
 
@@ -241,6 +248,15 @@ td {
 	margin-right: initial;
 
 }
+
+@media (max-width: 1000px) {
+
+.proyecto{
+
+display: block; /*Lo que hace que se vea solamente uno por vez*/
+
+}
+
 }
 
 @media (max-width: 1000px){
@@ -271,6 +287,9 @@ thead{
 
 }
 }
+
+
+
 
 
 /*  ESTILO DE LA BARRA DE PROGRESO*/
