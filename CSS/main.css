@@ -1,0 +1,77 @@
+body{
+
+    font-family: 'Archivo Narrow', sans-serif;
+
+    font-family: 'Arvo', serif;
+
+
+}
+/*
+#skills{
+	padding: 400px 0px; 
+
+	Puedo agregar un !important para decirle a bootstrap que lo que escribo 
+	aca tiene prioridad vs lo que escribo con clases. sino por default todo lo 
+	que escribo con en .css va a tener menor prioridad que la clase que incluyo
+
+}*/
+
+.height{
+/*	height: 1000px;
+agregando eso hace que la altura de la clase que tiene bootstrap sea de ese 
+tamaño.
+*/
+
+min-height: 100vh;
+/*
+vh es la medida dinamica 100vh es el 100% del navegador
+Significa que sin importar que tamaño tiene el navegador siempre 
+quiero un minimo de 100vh o el 100% de lo que se ve en pantalla
+Como le pongo min-height significa que el minimo que va a tener es el total
+de la pantalla,
+si pongo 60% va a tomar el 60% en caso de que el contenido de la caja sea
+menor al 60%.
+si pongo 20% como lo que dice es el minimo y el contenido de lo que hay es mayor
+a ese 20% entonces el valor que va a tomar la caja va a ser el contenido.
+ si pongo un valor mayor a 100% enconces para ver todo el contenido voy a tener
+ que hacer scroll para abajo
+
+ */
+
+}
+
+.title-underline{
+	width:200px;
+	height: 10px;
+	margin: 0 auto;
+	/*background: blue!important;*/
+}
+
+
+.height-80{
+	min-height: 80vh;
+}
+
+.about-picture{
+	background: url(../img/background-2.jpeg)center/cover no-repeat fixed;
+
+	
+	/* lo que puse despues del link de la imagen 
+	es lo mismo que poner todo esto:;
+	background-size: initial;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;*/
+	;
+}
+
+#filler,#progress{
+	background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url(../img/background-2.jpg)center/cover no-repeat fixed;
+
+/*Linera gradient le aplica una capa de color la caja que le estoy dando el background
+si pongo 2 rgba lo que hace es aplicar uno arriba y uno abajo (por default), si le subo la opacidad a uno
+va a ser mas oscuro arriba/abajo segun lo que seleccione.
+...to right, rgba(0,0,0,0.9),rgba(0,0,0,0.1)... hace que a la derecha este mas negro que izquierda
+*/
+
+}
