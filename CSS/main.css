@@ -6,6 +6,50 @@ body{
 
 
 }
+
+
+/* Seccion 1: CSS utilizados en el index*/
+
+.fondo-lateral{
+	background-color: #3385AD
+	
+}
+
+.fondo-footer{
+	background-color: #3385AD
+}
+
+ /* Quiero que el proyecto bootstrap me quede igual que los otro pero no puedo :'( */
+.img-proyecto{
+	width: 600px;
+    height: 500px;
+    overflow: hidden;
+}
+
+.img-proyecto img{
+    width: 400px;
+    height: 300px;
+	margin: -75px 0 0 -100px;
+} 
+
+.caja-progreso{
+	border: solid 1px black;
+	padding: 1em;
+	border-radius: 10px;
+	background-color: #84bcda;
+}
+
+
+
+
+
+/* FIN Seccion 1*/
+
+
+
+
+/* Seccion 2: CSS utilizados unicamente en el proyecto bootstrap */ 
+
 /*
 #skills{
 	padding: 400px 0px; 
@@ -75,3 +119,5 @@ va a ser mas oscuro arriba/abajo segun lo que seleccione.
 */
 
 }
+
+/* FIN seccion 2*/

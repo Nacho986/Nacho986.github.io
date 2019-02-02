@@ -1,177 +1,262 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-	<meta charset="utf-8">
+	<!-- <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<title>Ignacio Ferrentino</title>
 	<link rel="stylesheet" href="CSS/vendor/normalize.css">
 	<link rel="stylesheet" href="CSS/estilos.css">
-	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">  -->
+	<meta charset="UTF-8">
+	<title>Proyecto solo bootstrap</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<!-- bootstrap CSS -->
+	<link rel="stylesheet" href="CSS/bootstrap.min.css">
+	<!-- font awesome -->
+	<script src="js/all.js"></script>
+	<!-- Esto es font awesome que es una fuentes de iconos, La galeria se encuentra en https://fontawesome.com/icons?d=gallery y en la misma web se puede descargar o obtener el link para usarla por web-->
+
+	<!-- Google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Archivo+Narrow:500i|Arvo" rel="stylesheet">
+	<!-- Estoy agregando 2 fuentes arvo y archivo narrow -->
+
+	<!-- main CSS -->
+	<link rel="stylesheet" href="CSS/main.css">
+
 </head>
 
 <body>
 
-	<aside class="lateral">
-		
-		<div class="perfil">
-			<figure class="perfil__circulo">
-				<img src="img/Perfil.jpg" alt="Foto de perfil" class="perfil__foto"> 
-				</img>
-			</figure>
-			<h1 class="perfil__nombres">Ignacio Ferrentino</h1>
-		</div>
-
-		<div class="informacion">
-			<h2 class="informacion__titulo">Estado Actual</h2>
-			<p class="informacion__descripcion">Esta pagina web es el resultado de mi primer intento de desarrollar un sitio web. En el mismo voy a subir los proyectos que estoy trabajando y tengo planeado trabajar para aprender a desarrollo web.</p>
-			<h4 class="informacion__subtitulo"> <em>Objetivos a alcanzar:</em></h4>
-			<ul class="informacion__habilidades">
-				<li>FRONTEND
-					<ul class="listado__lenguajes">
-						<li>Bootstrap</li>
-						<li>JavaScript</li>
-					</ul>
-				</li>
-				<li>BACKEND
-					<ul class="listado__lenguajes">
-						<li>Herramientas orientadas la programacion de servicios de base de datos </li>
-					</ul>
-				</li>
-			</ul>
-
-
-
-	<h4 class="informacion__subtitulo"> <em>Conocimientos Adquiridos:</em></h4>
-
-	<div class="div__lv">
-		<div><p>HTML</p></div>
-		<div class="barra" id="html"></div>
-	</div>
-
-	<div class="div__lv">
-		<div><p>CSS</p></div>
-		<div class="barra" id="CSS"></div>
-	</div>
-
-	</div>
-	</aside>
-
-<!-- Aca va el proyecto -->
-	
-	<section class="proyectos">
-
+	<div class="container-fluid">
+		<!-- Una fila sola tiene el lateral y los 4 proyectos -->
 		<div class="row">
-
-		<article class="proyecto">
-
-			<img src="img/Proyecto Bootstrap.jpg" class="proyecto__imagen"> </img>
-			<a href="01 - Proyecto 1 - Solo bootstrap.html"><h3 class="proyecto__titulo">Proyectos realizados con Bootstrap</h3></a>
-			<p class="proyecto__descripcion">
-				Para continuar con el aprendizaje de desarrollo web. Mi siguiente paso fue aprender el framework conocido como bootstrap. Con el objetivo de asentar mis conocimientos de CSS y facilitar futuros proyectos con esta herramienta.</p>
-
-			<h4 class="proyecto__subtitulo">Habilidades a Utilizar:</h4>
-			
-
-			<ul class="habilidades">
-				<li class="habilidad">HTML</li>
-				<li class="habilidad">CSS</li>
-				<li class="habilidad">Bootstrap</li>				
-
-			</ul>
-
-
-
-		</article>   
- 
-		<article class="proyecto">
-
-			<img src="img/Proyecto JS.jpg" class="proyecto__imagen"> </img>
-			<h3 class="proyecto__titulo">Proyecto JavaScrip</h3>
-			<p class="proyecto__descripcion"> Una vez finalizado un aprendizaje basico de la forma en la cual se maqueta una pagina web y se le da un diseño claro con HTML y CSS, el siguiente paso es enfocarme en el lenguaje de programacion JavaScript. Para poder generar dentro de mis proyectos un ambiente interactivo ameno</p>
-
-			<h4 class="proyecto__subtitulo">Habilidades a Utilizar:</h4>
-
-			<ul class="habilidades">
-				<li class="habilidad">HTML</li>
-				<li class="habilidad">Bootstrap</li>
-				<li class="habilidad">JavaScript</li>				
-
-			</ul>
+			<!-- Barra lateral -->
+			<aside class="col-md-3 lateral fondo-lateral">
+				<div class="container-fluid">
+					<div class="d-flex m-4 align-items-center">
+						<img src="img/Perfil.jpg" alt="Foto de perfil" class="img-fluid img-thumbnail rounded-circle bg-dark border-dark">
+						<h1 class="mx-4">Ignacio Ferrentino</h1>
+					</div>
+				</div>
+				<div class="informacion">
+					<h2 class="informacion__titulo">Estado Actual</h2>
+					<p class="informacion__descripcion">Esta pagina web es el resultado de mi primer intento de desarrollar un sitio
+						web. En el mismo voy a subir los proyectos que estoy trabajando y tengo planeado trabajar para aprender a
+						desarrollo web.</p>
+					<h4 class="informacion__subtitulo"> <em>Objetivos a alcanzar:</em></h4>
+					<ul class="informacion__habilidades">
+						<li>FRONTEND
+							<ul class="listado__lenguajes">
+								<li>Bootstrap</li>
+								<li>JavaScript</li>
+							</ul>
+						</li>
+						<li>BACKEND
+							<ul class="listado__lenguajes">
+								<li>Herramientas orientadas la programacion de servicios de base de datos </li>
+							</ul>
+						</li>
+					</ul>
 
 
+					<!-- subSeccion habilidades -->
+
+					<section class="p-5" id="habilidades">
+						<h4 class="informacion__subtitulo"> <em>Conocimientos Adquiridos:</em></h4>
+						<div class="container-fluid">
+
+							<div class="caja-progreso my-3">
+								<h4 class="d-flex justify-content-center">HTML</h4>
+								<div class="progress bg-pr">
+									<div class="progress-bar bg-success" style="width:80%"></div>
+								</div>
+							</div>
+
+							<div class="caja-progreso my-3">
+								<h4 class="d-flex justify-content-center">CSS</h4>
+								<div class="progress">
+									<div class="progress-bar bg-dark" style="width:60%"></div>
+								</div>
+							</div>
+
+							<div class="caja-progreso my-3">
+								<h4 class="d-flex justify-content-center">bootstrap</h4>
+								<div class="progress bg-pr">
+									<div class="progress-bar bg-warning" style="width:50%"></div>
+								</div>
+							</div>
 
 
-		</article> 
+
+						</div><!-- FIN subSeccion habilidades -->
+
+
+					</section>
+			</aside>
+
+			<!-- FIN Barra lateral -->
+
+			<!-- Aca van los proyectos -->
+
+			<!-- Esta seccion contiene los proyectos -->
+			<section class="col-md-9 proyectos">
+
+				<!-- una linea con 2 proyectos -->
+				<div class="row">
+					<div class="col-md-6">
+						<!-- Proyecto -->
+						<article class="proyecto mx-2 my-5">
+
+							<img src="img/Proyecto Bootstrap.jpg" class="img-fluid mx-auto img-proyecto"> </img>
+							<a href="01 - Proyecto 1 - Solo bootstrap.html">
+								<h3 class="proyecto__titulo my-3">Proyectos realizados con Bootstrap</h3>
+							</a>
+							<p class="proyecto__descripcion">
+								Para continuar con el aprendizaje de desarrollo web. Mi siguiente paso fue aprender el framework conocido como
+								bootstrap. Con el objetivo de asentar mis conocimientos de CSS y facilitar futuros proyectos con esta
+								herramienta.</p>
+
+							<h4 class="proyecto__subtitulo">Habilidades a Utilizar:</h4>
+
+							<ul class="habilidades d-flex justify-content-around mt-3">
+								<i class="fab fa-html5 fa-4x text-info"></i>
+								<i class="fab fa-css3 fa-4x text-info"></i>
+								<img src="img/Proyecto Bootstrap.jpg" height="70px" alt="bootstrap">
+
+								<!-- <li class="habilidad">HTML</li>
+								<li class="habilidad">CSS</li>
+								<li class="habilidad">Bootstrap</li> -->
+							</ul>
+						</article>
+						<!-- FIN proyecto -->
+					</div>
+					<div class="col-md-6">
+						<!-- Proyecto -->
+						<article class="proyecto my-5">
+
+							<img src="img/Proyecto JS.jpg" class="img-fluid mx-auto img-proyecto"> </img>
+							<h3 class="proyecto__titulo my-3">Proyecto JavaScrip</h3>
+							<p class="proyecto__descripcion"> Una vez finalizado un aprendizaje basico de la forma en la cual se maqueta una
+								pagina web y se le da un diseño claro con HTML y CSS, el siguiente paso es enfocarme en el lenguaje de
+								programacion JavaScript. Para poder generar dentro de mis proyectos un ambiente interactivo ameno</p>
+
+							<h4 class="proyecto__subtitulo">Habilidades a Utilizar:</h4>
+
+							<ul class="habilidades d-flex justify-content-around mt-3">
+								<i class="fab fa-html5 fa-4x text-info"></i>
+								<i class="fab fa-css3 fa-4x text-info"></i>
+								<img src="img/Proyecto Bootstrap.jpg" height="70px" alt="bootstrap">
+								<i class="fab fa-js fa-4x text-info"></i>
+
+								<!-- <li class="habilidad">HTML</li>
+								<li class="habilidad">CSS</li>
+								<li class="habilidad">Bootstrap</li> -->>
+
+						</article>
+						<!-- FIN proyecto -->
+					</div>
+				</div>
+				<!-- FIN de linea con 2 proyectos -->
+
+				<!-- una linea con 2 proyectos -->
+				<div class="row">
+					<div class="col-md-6">
+						<!-- Proyecto -->
+						<article class="proyecto my-5">
+
+							<img src="img/Proyecto Generico.jpg" class="img-fluid mx-auto img-proyecto"> </img>
+							<h3 class="proyecto__titulo my-3">Proyecto a idear</h3>
+							<p class="proyecto__descripcion">Luego de culminar con la parte basica del FrontEnd seguiré con algun proyecto
+								que
+								me ayude a desarrollar nuevas habilidades. Enfocandome principalmente en perfeccionar las habilidades ya
+								aprendidas, e incorporar nuevas habilidades un poco mas relacionadas con la programacion BackEnd.</p>
+
+							<h4 class="proyecto__subtitulo">Habilidades a Utilizar:</h4>
+
+							<ul class="habilidades d-flex justify-content-around mt-3">
+								<i class="fab fa-html5 fa-4x text-info"></i>
+								<i class="fab fa-css3 fa-4x text-info"></i>
+								<img src="img/Proyecto Bootstrap.jpg" height="70px" alt="bootstrap">
+								<i class="fab fa-js fa-4x text-info"></i>
+
+								<!-- <li class="habilidad">HTML</li>
+								<li class="habilidad">CSS</li>
+								<li class="habilidad">Bootstrap</li> -->
+
+							</ul>
+						</article>
+						<!-- FIN proyecto -->
+					</div>
+
+					<div class="col-md-6">
+						<!-- Proyecto -->
+						<article class="proyecto my-5">
+
+							<img src="img/Proyecto Generico 2.jpg" class="img-fluid mx-auto img-proyecto"> </img>
+							<h3 class="proyecto__titulo my-3">Proyecto a idear 2</h3>
+							<p class="proyecto__descripcion">Luego de culminar con la parte basica del FrontEnd seguiré con algun proyecto
+								que
+								me ayude a desarrollar nuevas habilidades. Enfocandome principalmente en perfeccionar las habilidades ya
+								aprendidas, e incorporar nuevas habilidades un poco mas relacionadas con la programacion BackEnd.</p>
+
+							<h4 class="proyecto__subtitulo">Habilidades a Utilizar:</h4>
+
+							<ul class="habilidades d-flex justify-content-around mt-3">
+								<i class="fab fa-html5 fa-4x text-info"></i>
+								<i class="fab fa-css3 fa-4x text-info"></i>
+								<img src="img/Proyecto Bootstrap.jpg" height="70px" alt="bootstrap">
+								<i class="fab fa-js fa-4x text-info"></i>
+
+								<!-- <li class="habilidad">HTML</li>
+								<li class="habilidad">CSS</li>
+								<li class="habilidad">Bootstrap</li> -->
+
+							</ul>
+						</article>
+						<!-- FIN Proyecto -->
+					</div>
+				</div>
+			</section>
 		</div>
+	</div>
+	<!-- FIN Aca van los proyectos -->
 
+	<!-- Footers -->
+	<footer id="version" class="fondo-footer">
+		<div class="container-fluid">
 
-		<div class="row">
-		<article class="proyecto">
+			<div class="row py-5">
+				<div class="col-md-6">
+					<div>
+						<strong>Version actual 2.0</strong>, Maquetado y desarrollado en bootstrap 100% por mi. <br>
+						Idea original del canal de youtube <em>"DevCode"</em>. <br> Version 1.3 el 12-1-19 <a href="00 - indexViejo/index.html" style="color:black">Version 1.3 (12-1-19)</a>.<br>
+						Version 1.2: Modificado para ajustarlo a mi gusto personal con mis conocimientos personales al dia de hoy.
+						(15-1-19)<br>
+						Version 1.3: Modificado con barra gracias a Bruno Ruiz y adaptado para dispositivos moviles (23-1-19)<br>
+						Contacto: iferren@gmail.com
+					</div>
+				</div>
 
-			<img src="img/Proyecto Generico.jpg" class="proyecto__imagen"> </img>
-			<h3 class="proyecto__titulo">Proyecto a idear</h3>
-			<p class="proyecto__descripcion">Luego de culminar con la parte basica del FrontEnd seguiré con algun proyecto que me ayude a desarrollar nuevas habilidades. Enfocandome principalmente en perfeccionar las habilidades ya aprendidas, e incorporar nuevas habilidades un poco mas relacionadas con la programacion BackEnd.</p>
-
-			<h4 class="proyecto__subtitulo">Habilidades a Utilizar:</h4>
-			
-			<ul class="habilidades">
-				<li class="habilidad">HTML</li>
-				<li class="habilidad">CSS</li>
-				<li class="habilidad">Bootstrap</li>
-				<li class="habilidad">JavaScript</li>				
-
-			</ul>
-
-
-		</article>   
-
-
-		<article class="proyecto">
-
-			<img src="img/Proyecto Generico 2.jpg" class="proyecto__imagen"> </img>
-			<h3 class="proyecto__titulo">Proyecto a idear 2</h3>
-			<p class="proyecto__descripcion">Luego de culminar con la parte basica del FrontEnd seguiré con algun proyecto que me ayude a desarrollar nuevas habilidades. Enfocandome principalmente en perfeccionar las habilidades ya aprendidas, e incorporar nuevas habilidades un poco mas relacionadas con la programacion BackEnd.</p>
-
-			<h4 class="proyecto__subtitulo">Habilidades a Utilizar:</h4>			
-
-			<ul class="habilidades">
-				<li class="habilidad">HTML</li>
-				<li class="habilidad">CSS</li>
-				<li class="habilidad">Bootstrap</li>
-				<li class="habilidad">JavaScript</li>				
-
-			</ul>
-
-
-		</article> 
+				<div class="col-md-3 mt-3">
+					<h2 class="informacion__titulo">Habilidades utilizadas en este sitio web</h2>
+					<div class="d-flex justify-content-around mt-2">
+					<i class="fab fa-html5 fa-4x text-danger"></i>
+					<i class="fab fa-css3 fa-4x text-danger"></i>
+					<img src="img/Proyecto Bootstrap.jpg"  height="70px" alt="bootstrap">
+					</div>
+				</div>
+			</div>
 		</div>
-
-	</section>
-
-	<footer class="version">
-
-		<div>
-			<strong>Version actual 1.3</strong>, Codigo original del canal de youtube <em>"DevCode"</em>. Desarrollado por <strong>IF</strong> (Version 1.0 el 12-1-19).<br> 
-			Version 1.2: Modificado para ajustarlo a mi gusto personal con mis conocimientos personales al dia de hoy. (15-1-19)<br>
-			Version 1.3: Modificado con barra gracias a Bruno Ruiz y adaptado para dispositivos moviles (23-1-19)<br>
-			Contacto: iferren@gmail.com
-		</div>
-
-		<div>
-
-			<h2 class="informacion__titulo">Habilidades utilizadas en este sitio web</h2>
-			<ul class="habilidades">
-				<li class="habilidad">HTML</li>
-				<li class="habilidad">CSS</li>
-				<li class="habilidad">bootstrap</li>
-
-			</ul>
-
-		</div>
-
-
 	</footer>
+	<!-- FIN Footer -->
 
 
+
+
+	<script src="js/jquery.js"></script>
+	<!-- bootstrap js -->
+	<script src="js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
